@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - crop price prediction Style</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            padding: 40px;
+            width: 350px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        input[type="email"], input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+        }
+        .signup-btn {
+            background-color: #067430;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .signup-btn:hover {
+            background-color: #015506;
+        }
+        .or {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .or::before, .or::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #dbdbdb;
+        }
+        .or:not(:empty)::before {
+            margin-right: 10px;
+        }
+        .or:not(:empty)::after {
+            margin-left: 10px;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            color: white;
+            width: 100%;
+        }
+        .google-btn {
+            background-color: #740b02;
+        }
+        .facebook-btn {
+            background-color: #4267B2;
+        }
+        .social-btn:hover {
+            opacity: 0.9;
+        }
+        .terms {
+            font-size: 12px;
+            color: #8e8e8e;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+   
+    <br>
+    <div class="logo"> 
+        <img src="R.png" height="70" alt="logo"></div>
+
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Full Name" required>
+    <input type="password" placeholder="Password" required>
+
+    <button class="signup-btn">Sign Up</button>
+
+    <div class="or">OR</div>
+
+    <button class="social-btn google-btn">Sign Up with Google</button>
+    <button class="social-btn facebook-btn">Sign Up with Facebook</button>
+    <a href="http://127.0.0.1:3000/index.html" >Go Back </a>
+    <p class="terms">By signing up, you agree to our Terms & Conditions and Privacy Policy.</p>
+</div>
+
+</body>
+</html>
